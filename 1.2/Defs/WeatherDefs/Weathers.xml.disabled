@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WeatherDef>
+    <defName>MorrowRim_ToxicMiasma</defName>
+    <label>swamp miasma</label>
+    <isBad>true</isBad>
+    <description>A thick cloud of toxic air. The lakes and marshes in ashland swamps will often accumulate large quantities of carbon dioxide and other gases. This may be disturbed by geothermal activity, resulting in clouds of invisible death releasing from the water.\n\nRemaining outside during an event is ill advised, unless a bionic filter is installed or appropriate headgear is worn.</description>
+    <favorability>Bad</favorability>
+    <perceivePriority>1</perceivePriority>
+	<eventMakers>
+		<li>
+			<averageInterval>300</averageInterval>
+			<eventClass>MorrowRim_AshSwamp.WeatherEvent_ToxicMiasma</eventClass>
+		</li>
+	</eventMakers>
+	<!--
+	<overlayClasses>
+		<li>MorrowRim_AshSwamp.WeatherOverlay_ToxicMiasma</li>
+	</overlayClasses>
+	-->
+    <!-- Colors are Clear -->
+    <skyColorsDay>
+      <sky>(1,1,1)</sky>
+      <shadow>(0.718,0.745,0.757)</shadow>
+      <overlay>(1,1,1)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(0.858,0.650,0.423)</sky>
+      <shadow>(0.955,0.886,0.914)</shadow>
+      <overlay>(0.8,0.8,0.8)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.482,0.603,0.682)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.482,0.603,0.682)</sky>
+      <shadow>(0.85, 0.85, 0.85)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>1.25</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
+
+</Defs>
+
+
+
+

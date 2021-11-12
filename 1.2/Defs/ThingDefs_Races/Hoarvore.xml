@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseInsect">
+		<defName>MorrowRim_Hoarvor</defName>
+		<label>hoarvor</label>
+		<description>An oversized tick, found natively in the ashlands swamp. The hoarvors diet consists solely of blood, which it most often obtains from corpses. Of course it will gladly drain passed out drunkards, most likely killing them in the process.\n\nWhilst not particularly dangerous, at least compared to the much larger predators of the ashlands swamp, their bite causes a great deal of bloodloss. One should also be wary of hoarvor infestations, which can get out of control rather quickly. A large infestation will often resort to alternative food sources.\n\nLike many ashland natives hoarvore are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>3.85</MoveSpeed>
+		  <MarketValue>120</MarketValue>
+		  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>45</ComfyTemperatureMax>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+		  <li>
+			<label>mandibles</label>
+			<capacities>
+			  <li>MorrowRim_HoarvorBite</li>
+			</capacities>
+			<power>6</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2.6</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		  </li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_HoarvorFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~5</eggCountRange>
+			</li>
+		</comps>
+		<race>
+		  <herdAnimal>true</herdAnimal>
+		  <body>MorrowRim_Tick</body>
+		  <baseBodySize>0.5</baseBodySize>
+		  <baseHealthScale>0.85</baseHealthScale>
+		  <baseHungerRate>0.85</baseHungerRate>
+		  <predator>true</predator>
+		  <maxPreyBodySize>1.0</maxPreyBodySize>
+		  <foodType>CarnivoreAnimalStrict</foodType>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <wildness>0.9</wildness>
+		  <trainability>Intermediate</trainability>
+		  <lifeExpectancy>20</lifeExpectancy>
+		  <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.0</manhunterOnTameFailChance>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.10</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.25</minAge>
+			  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+			  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+			  <soundCall>Pawn_Megascarab_Call</soundCall>
+			  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalInsect</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef Name="MorrowRim_Hoarvor" ParentName="AnimalKindBase">
+		<defName>MorrowRim_Hoarvor</defName>
+		<label>hoarvore</label>
+		<race>MorrowRim_Hoarvor</race>
+		<combatPower>80</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<wildGroupSize>3~9</wildGroupSize>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Hoarvor/Hoarvor</texPath>
+			  <drawSize>0.4</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Hoarvor/Dessicated_Hoarvor</texPath>
+			  <drawSize>0.4</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Hoarvor/Hoarvor</texPath>
+			  <drawSize>0.8</drawSize>
+			  <shadowData>
+				<volume>(0.6, 0.45, 0.45)</volume>
+				<offset>(0,0,-0.25)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Hoarvor/Dessicated_Hoarvor</texPath>
+			  <drawSize>0.8</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Hoarvor/Hoarvor</texPath>
+			  <drawSize>1.2</drawSize>
+			  <shadowData>
+				<volume>(0.8, 0.6, 0.6)</volume>
+				<offset>(0,0,-0.3)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Hoarvor/Dessicated_Hoarvor</texPath>
+			  <drawSize>1.2</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

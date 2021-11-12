@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ArgoBehemoth -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_ArgoBehemoth</defName>
+		<label>behemoth</label>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<description>A large bipedal reptile occasionally found in swampy regions. The behemoth is actually a feral breed of Argonian, that has grown far larger, stronger and significantly wilder.</description>
+		<statBases>
+		  <MoveSpeed>3.0</MoveSpeed>
+		  <MarketValue>450</MarketValue>
+		  <ArmorRating_Blunt>0.32</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+		  <ComfyTemperatureMin>5</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+		  <FilthRate>4</FilthRate>
+		</statBases>
+		<uiIconScale>1.35</uiIconScale>
+		<tools>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>13</power>
+			<cooldownTime>2.6</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+		  </li>
+		  <li>
+			<label>left hand claws</label>
+			<capacities>
+			  <li>Scratch</li>
+			  <li>Blunt</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.0</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<label>right hand claws</label>
+			<capacities>
+			  <li>Scratch</li>
+			  <li>Blunt</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.0</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+			<surpriseAttack>
+			  <extraMeleeDamages>
+				<li>
+				  <def>Stun</def>
+				  <amount>14</amount>
+				</li>
+			  </extraMeleeDamages>
+			</surpriseAttack>
+		  </li>
+		  <li>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>18</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.5</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_ArgoBehemothFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>14</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+		</comps>
+		<race>
+		  <predator>true</predator>
+		  <maxPreyBodySize>2.2</maxPreyBodySize>
+		  <body>MorrowRim_Daedra</body>
+		  <baseBodySize>1.2</baseBodySize>
+		  <baseHealthScale>3.1</baseHealthScale>
+		  <baseHungerRate>0.55</baseHungerRate>
+		  <foodType>CarnivoreAnimal</foodType>
+		  <leatherDef>MorrowRim_HeavyLeather</leatherDef>
+		  <wildness>0.90</wildness>
+		  <trainability>Advanced</trainability>
+		  <lifeExpectancy>23</lifeExpectancy>
+		  <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+		  <manhunterOnDamageChance>0.4</manhunterOnDamageChance>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.35</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.6</minAge>
+			  <soundWounded>Pawn_Bison_Wounded</soundWounded>
+			  <soundDeath>Pawn_Bison_Death</soundDeath>
+			  <soundCall>Pawn_Bison_Call</soundCall>
+			  <soundAngry>Pawn_Bison_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalExotic</li>
+		  <li>AnimalFighter</li>
+		  <li>AshlandAnimalExotic</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef Name="MorrowRim_ArgoBehemoth" ParentName="AnimalKindBase">
+		<defName>MorrowRim_ArgoBehemoth</defName>
+		<label>behemoth</label>
+		<race>MorrowRim_ArgoBehemoth</race>
+		<combatPower>120</combatPower>
+		<ecoSystemWeight>1.0</ecoSystemWeight>
+		<wildGroupSize>1~3</wildGroupSize>
+		<alternateGraphicChance>0.75</alternateGraphicChance>
+		<alternateGraphics>
+			<li><color>(121,95,80)</color></li>
+			<li><color>(79,60,42)</color></li>
+			<li><color>(103,80,27)</color></li>
+			<li><color>(178,168,103)</color></li>
+			<li><color>(143,115,95)</color></li>
+			<li><color>(139,119,105)</color></li>
+		</alternateGraphics>
+		<lifeStages>
+		  <li>
+			<label>behemoth spawn</label>
+			<labelPlural>behemoth spawn</labelPlural>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/ArgoBehemoth/ArgoBehemoth</texPath>
+			  <color>(136,126,67)</color>
+			  <drawSize>1.6</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/ArgoBehemoth/Dessicated_ArgoBehemoth</texPath>
+			  <drawSize>1.6</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/ArgoBehemoth/ArgoBehemoth</texPath>
+			  <color>(136,126,67)</color>
+			  <drawSize>1.9</drawSize>
+			  <shadowData>
+				<volume>(0.6, 0.45, 0.45)</volume>
+				<offset>(0,0,-0.25)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/ArgoBehemoth/Dessicated_ArgoBehemoth</texPath>
+			  <drawSize>1.9</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/ArgoBehemoth/ArgoBehemoth</texPath>
+			  <color>(136,126,67)</color>
+			  <drawSize>2.2</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/ArgoBehemoth/Dessicated_ArgoBehemoth</texPath>
+			  <drawSize>2.2</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
+

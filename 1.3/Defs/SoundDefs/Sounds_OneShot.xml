@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>MorrowRim_Hiss</defName>   
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+        <name>Main hiss jet</name>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Misc/Hiss/HissSmall</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>40~40</volumeRange>      
+        <pitchRange>0.936413~1</pitchRange>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

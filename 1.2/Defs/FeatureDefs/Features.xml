@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FeatureDef>
+    <defName>MorrowRim_AshlandsSwamp</defName>
+    <workerClass>FeatureWorker_Biome</workerClass>
+    <order>442</order>
+     <rootBiomes>
+      <li>MorrowRim_AshSwamp</li>
+    </rootBiomes>
+    <acceptableBiomes>
+		<li>TemperateSwamp</li>
+		<li>TropicalSwamp</li>
+    </acceptableBiomes>
+    <nameMaker>NamerSwamp</nameMaker>
+  </FeatureDef>
+
+</Defs>

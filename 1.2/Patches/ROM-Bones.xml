@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rim of Madness - Bones</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- Remove bones from animals -->
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_Mudcrab"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_SwampJelly"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName = "MorrowRim_SwampStrider"]/statBases</xpath>
+					<value>
+						<BoneAmount>0</BoneAmount>
+					</value>
+				</li>
+		
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

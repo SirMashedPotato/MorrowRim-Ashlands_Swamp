@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Netch jelly -->
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>MorrowRim_SwampJellyEdible</defName>
+		<label>swamp jelly</label>
+		<description>A jelly like substance harvested from a swamp jelly. Rather tasty, and completely fine to eat raw.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Items/Resources/MorrowRim_SwampJelly</texPath>
+		  <drawSize>0.8</drawSize>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+		  <MarketValue>2.0</MarketValue>
+		  <Mass>0.045</Mass>
+		  <MaxHitPoints>60</MaxHitPoints>
+		  <Flammability>0.2</Flammability>
+		  <Nutrition>0.05</Nutrition>
+		  <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Rottable">
+			<daysToRotStart>12</daysToRotStart>
+			<rotDestroys>true</rotDestroys>
+		  </li>
+		</comps>
+		<ingestible>
+		  <preferability>RawTasty</preferability>
+		  <foodType>AnimalProduct, Fluid</foodType>
+		</ingestible>
+		<thingCategories>
+		  <li>AnimalProductRaw</li>
+		</thingCategories>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

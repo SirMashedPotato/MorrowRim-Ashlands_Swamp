@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>MorrowRim_PrimitiveElixirs</defName>
+		<label>primitive elixir creation</label>
+		<description>Allows the creation of the most basic varieties of elixir at the drug table. These elixirs are used to either purge toxic or ash buildup.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+		<tab>MorrowRim_Tab</tab>
+	</ResearchProjectDef>
+
+</Defs>

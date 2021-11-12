@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_SwampBite</defName>
+		<label>mudcrab bite</label>
+		<additionalHediffs>
+			<li>
+				<hediff>MorrowRim_SwampFever</hediff>
+				<severityPerDamageDealt>0.001</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+
+</Defs>

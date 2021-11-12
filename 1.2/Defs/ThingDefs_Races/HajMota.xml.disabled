@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- HajMota -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_HajMota</defName>
+		<label>haj mota</label>
+		<description>An enormous reptile, topped by an almost stone-like shell. The haj mota is a force to be reckoned with, even a wamasu would turn tail at the sight of one.\n\nWhile the shell does weigh a considerable amount, the haj mota is capable of moving surprisingly fast. Luckily the haj mota is primarly an ambush predator, and prefers much smaller prey than itself.\n\nLike many ashland natives haj mota are resistant to the effects of ash-storms.</description>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<statBases>
+		  <MoveSpeed>3.0</MoveSpeed>
+		  <MarketValue>1000</MarketValue>
+		  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+		  <ToxicSensitivity>0.5</ToxicSensitivity>
+		  <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+		  <!--
+		  <li>
+			<label>left claw</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>18</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>right claw</label>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>18</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+		  </li>
+		  -->
+		  <li>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>20</power>
+			<cooldownTime>2.6</cooldownTime>
+			<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+			<chanceFactor>0.7</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+		  <li Class="CompProperties_EggLayer">
+			<eggFertilizedDef>MorrowRim_Egg_HajMotaFertilized</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>25</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~1</eggCountRange>
+		  </li>
+		</comps>
+		<race>
+		  <body>TurtleLike</body>
+		  <herdAnimal>false</herdAnimal>
+		  <predator>true</predator>
+		  <maxPreyBodySize>1.4</maxPreyBodySize>
+		  <baseBodySize>3.2</baseBodySize>
+		  <baseHealthScale>3.4</baseHealthScale>
+		  <baseHungerRate>0.48</baseHungerRate>
+		  <foodType>CarnivoreAnimal</foodType>
+		  <leatherDef>MorrowRim_HeavyLeather</leatherDef>
+		  <wildness>0.95</wildness>
+		  <trainability>Simple</trainability>
+		  <lifeExpectancy>80</lifeExpectancy>
+		  <manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+		  <manhunterOnDamageChance>1</manhunterOnDamageChance>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>1</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>6</minAge>
+			  <soundWounded>Pawn_Tortoise_Wounded</soundWounded>
+			  <soundDeath>Pawn_Tortoise_Death</soundDeath>
+			  <soundCall>Pawn_Tortoise_Call</soundCall>
+			  <soundAngry>Pawn_Tortoise_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalExotic</li>
+		  <li>AshlandAnimalExotic</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_HajMota</defName>
+		<label>haj mota</label>
+		<race>MorrowRim_HajMota</race>
+		<combatPower>250</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/HajMota/HajMota</texPath>
+			  <drawSize>2.8</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/HajMota/Dessicated_HajMota</texPath>
+			  <drawSize>2.8</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/HajMota/HajMota</texPath>
+			  <drawSize>3.4</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/HajMota/Dessicated_HajMota</texPath>
+			  <drawSize>3.4</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/HajMota/HajMota</texPath>
+			  <drawSize>4.0</drawSize>
+			  <shadowData>
+				<volume>(0.25, 0.3, 0.25)</volume>
+				<offset>(0,0,0)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/HajMota/Dessicated_HajMota</texPath>
+			  <drawSize>4.0</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

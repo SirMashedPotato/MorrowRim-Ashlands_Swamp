@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Expanded Framework</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Floating patches -->
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="MorrowRim_SwampJelly"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_Floating">
+						</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

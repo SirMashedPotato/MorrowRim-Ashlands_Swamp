@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Supplied by Arcimbaldo -->
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Empire</li>
+		</mods>		
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<FactionColonies.BiomeResourceDef>
+							<defName>MorrowRim_AshSwamp</defName>
+							<label>ashland swamp</label>
+							<canSettle>true</canSettle>
+							<BaseProductionAdditive> <!-- 0 is default -->
+								<li>1</li> <!-- Food -->
+								<li>1</li> <!-- Weapons -->
+								<li>1</li> <!-- Apparel -->
+								<li>1.5</li> <!-- Animals -->
+								<li>1.5</li> <!-- Logging -->
+								<li>1</li> <!-- Mining -->
+								<li>1.25</li> <!-- Research -->
+								<li>1</li> <!-- Power -->
+								<li>1.25</li> <!-- Medicine -->
+							</BaseProductionAdditive>
+							<BaseProductionMultiplicative> <!-- li is default -->
+								<li>0.75</li> <!-- Food -->
+								<li>1</li> <!-- Weapons -->
+								<li>1</li> <!-- Apparel -->
+								<li>1</li> <!-- Animals -->
+								<li>0.75</li> <!-- Logging -->
+								<li>1</li> <!-- Mining -->
+								<li>1</li> <!-- Research -->
+								<li>1</li> <!-- Power -->
+								<li>1</li> <!-- Medicine -->
+							</BaseProductionMultiplicative>
+						</FactionColonies.BiomeResourceDef>	
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

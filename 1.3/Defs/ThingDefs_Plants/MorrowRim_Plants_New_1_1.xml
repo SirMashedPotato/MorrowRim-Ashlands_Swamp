@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_FulgurSpore</defName>
+		<label>fulgur spore</label>
+		<modExtensions>
+			<!--
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>true</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+			-->
+		</modExtensions>
+		<comps>
+			<li Class="MorrowRim_AshSwamp.CompProperties_PlantDischargeOnMature">
+				<explosionDamage>EMP</explosionDamage>
+				<sound>Explosion_EMP</sound>
+			</li>
+		</comps>
+		<description>A large tower shaped fungus, only found in the ashlands swamp. The fulgur spore is named after the electrically charged spores it releases upon maturity, likely a defence mechanism against swamp jellies.\n\nThe fulgur spore is actually several different species of fungus, all cooperating as a single organism.</description>
+		<statBases>
+		  <MaxHitPoints>195</MaxHitPoints>
+		  <Beauty>4</Beauty>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_FulgurSpore</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <fertilityMin>0.8</fertilityMin>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <sowMinSkill>10</sowMinSkill>
+		  <blockAdjacentSow>true</blockAdjacentSow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <sowWork>4000</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <growMinGlow>0.0</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <topWindExposure>0.0</topWindExposure>
+		  <growDays>10.3</growDays>
+		  <visualSizeRange>0.8~1.8</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+
+	
+	<!-- Ferns -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_SomnaliusFern</defName>
+		<label>somnalius fern</label>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A small fragile fern, often found growing in swampy regions.</description>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <Beauty>5</Beauty>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_SomnaliusFern</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>3</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>1</maxMeshCount>
+		  <visualSizeRange>0.95~1.15</visualSizeRange>
+		  <topWindExposure>0.2</topWindExposure>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+			  <wildOrder>1</wildOrder>
+			  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_SomnaliusFernSown</defName>
+		<label>somnalius fern</label>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A small fragile fern, often found growing in swampy regions.</description>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <Beauty>5</Beauty>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_SomnaliusFern</texPath>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>3</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>1</maxMeshCount>
+		  <visualSizeRange>0.95~1.15</visualSizeRange>
+		  <topWindExposure>0.2</topWindExposure>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <purpose>Beauty</purpose>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshenFern</defName>
+		<label>ashen fern</label>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A rare fern that can sometimes be found growing in swampy regions. Certain ashlander tribes use the fronds of this fern to mask their scent whilst hunting.</description>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <Beauty>3</Beauty>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshenFern</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>3</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>1</maxMeshCount>
+		  <visualSizeRange>0.95~1.15</visualSizeRange>
+		  <topWindExposure>0.2</topWindExposure>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+			  <wildOrder>1</wildOrder>
+			  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	
+</Defs>

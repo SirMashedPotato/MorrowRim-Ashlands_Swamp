@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BiomeDef>
+    <defName>MorrowRim_AshSwamp</defName>
+    <label>ashland swamp</label>
+    <description>Swamp covered in a copious coating of ash. Soil is highly fertile, though much of it is covered in marsh. Whilst ashstorms are less common than in the ashlands, there are additional dangers. The ashlands swamp also supports unique flora and fauna, some of which are incredibly deadly.</description>
+    <workerClass>MorrowRim.BiomeWorker_AshSwamp</workerClass>
+    <animalDensity>2.6</animalDensity>
+    <plantDensity>0.50</plantDensity>
+    <settlementSelectionWeight>0.4</settlementSelectionWeight>
+    <movementDifficulty>4</movementDifficulty>
+    <texture>World/Biomes/MorrowRim_AshSwamp</texture>
+    <forageability>0.75</forageability>
+    <foragedFood>MorrowRim_RawAshFungus</foragedFood>
+    <wildPlantRegrowDays>15</wildPlantRegrowDays>
+    <soundsAmbient>
+      <li>Ambient_NightInsects_Standard</li>
+    </soundsAmbient>
+    <diseaseMtbDays>40</diseaseMtbDays>
+    <diseases>
+      <li>
+        <diseaseInc>MorrowRim_Disease_SwampFever</diseaseInc>
+        <commonality>150</commonality>
+      </li>
+	  <li>
+        <diseaseInc>Disease_Flu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Plague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_Malaria</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_GutWorms</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_FibrousMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_SensoryMechanites</diseaseInc>
+        <commonality>30</commonality>
+      </li>
+
+      <li>
+        <diseaseInc>Disease_MuscleParasites</diseaseInc>
+        <commonality>50</commonality>
+      </li>
+      
+      <li>
+        <diseaseInc>Disease_AnimalFlu</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+      <li>
+        <diseaseInc>Disease_AnimalPlague</diseaseInc>
+        <commonality>100</commonality>
+      </li>
+	  <li>
+		<diseaseInc>MorrowRim_Disease_Corprus</diseaseInc>
+		<commonality>70</commonality>
+	  </li>
+    </diseases>
+    <terrainsByFertility>
+      <li>
+        <terrain>MorrowRim_Ash</terrain>
+        <min>-999</min>
+        <max>0.87</max>
+      </li>
+      <li>
+        <terrain>MarshyTerrain</terrain>
+        <min>0.87</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.04</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>MarshyTerrain</terrain>
+            <min>0.35</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+      <li>
+        <perlinFrequency>0.027</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>MorrowRim_SoftAsh</terrain>
+            <min>-0.1</min>
+            <max>0.32</max>
+          </li>
+          <li>
+            <terrain>MorrowRim_WateryAsh</terrain>
+            <min>0.32</min>
+            <max>0.6</max>
+          </li>
+          <li>
+            <terrain>WaterShallow</terrain>
+            <min>0.6</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+	  <li>
+        <perlinFrequency>0.035</perlinFrequency>
+        <thresholds>
+          <li>
+            <terrain>MarshyTerrain</terrain>
+            <min>0.24</min>
+            <max>0.48</max>
+          </li>
+          <li>
+            <terrain>Marsh</terrain>
+            <min>0.48</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <baseWeatherCommonalities>
+		  <Clear>14</Clear>
+		  <MorrowRim_AshStorm>4</MorrowRim_AshStorm>
+		  <MorrowRim_Ashfall>4</MorrowRim_Ashfall>
+		  <MorrowRim_FoggyAshfall>2</MorrowRim_FoggyAshfall>
+		  <MorrowRim_LingeringAshClouds>2</MorrowRim_LingeringAshClouds>
+		  <!--<MorrowRim_ToxicMiasma>1</MorrowRim_ToxicMiasma>-->
+		  <MorrowRim_AshStorm_Metallic>1</MorrowRim_AshStorm_Metallic>
+		  <MorrowRim_BlightRain>0.25</MorrowRim_BlightRain>
+		  <MorrowRim_FoggyBlightRain>0.25</MorrowRim_FoggyBlightRain>
+		  <Rain>6</Rain>
+		  <Fog>6</Fog>
+		  <DryThunderstorm>0.2</DryThunderstorm>
+		  <RainyThunderstorm>3</RainyThunderstorm>
+		  <FoggyRain>3</FoggyRain>
+    </baseWeatherCommonalities>
+    <wildPlants>
+	  <!-- Core plants -->
+		<Plant_TallGrass>3.2</Plant_TallGrass>
+		<Plant_Grass>3.2</Plant_Grass>
+		<Plant_Chokevine>0.8</Plant_Chokevine>
+		<Plant_TreeWillow>0.5</Plant_TreeWillow>
+		<Plant_TreeCypress>0.5</Plant_TreeCypress>
+	  
+	  <!-- MorrowRim plants -->
+		<MorrowRim_AshGrass>1.0</MorrowRim_AshGrass>
+		
+		<MorrowRim_HackleLo_Wild>0.05</MorrowRim_HackleLo_Wild>
+		<MorrowRim_CorkBulb_Wild>0.02</MorrowRim_CorkBulb_Wild>
+		<MorrowRim_Marshmerrow_Wild>0.2</MorrowRim_Marshmerrow_Wild>
+		<MorrowRim_Kreshweed_Wild>0.2</MorrowRim_Kreshweed_Wild>
+	  
+		<MorrowRim_MuckSponge>0.15</MorrowRim_MuckSponge>
+		<MorrowRim_EmporerParasol>0.4</MorrowRim_EmporerParasol>
+		<MorrowRim_FunnelCap>0.1</MorrowRim_FunnelCap>
+		<MorrowRim_LuminousRussula>0.2</MorrowRim_LuminousRussula>
+		<MorrowRim_VioletCoprinus>0.2</MorrowRim_VioletCoprinus>
+		<MorrowRim_SmallMushrooms>0.1</MorrowRim_SmallMushrooms>
+	  
+	  <!-- Ash Swamp plants -->
+		<MorrowRim_WeepingParasol>0.4</MorrowRim_WeepingParasol>
+		<MorrowRim_DraggleTails>0.4</MorrowRim_DraggleTails>
+		<MorrowRim_SomnaliusFern>0.1</MorrowRim_SomnaliusFern>
+		<MorrowRim_AshenFern>0.01</MorrowRim_AshenFern>
+		<MorrowRim_SloughFern>0.2</MorrowRim_SloughFern>
+		<MorrowRim_FilterFern>0.2</MorrowRim_FilterFern>
+		<MorrowRim_MiasmaSponge>0.1</MorrowRim_MiasmaSponge>
+		<MorrowRim_FulgurSpore>0.05</MorrowRim_FulgurSpore>
+	  
+    </wildPlants>
+    <wildAnimals>
+		<!-- Core -->
+		<Rat>1</Rat>
+		
+		<!-- Ashlands -->
+		<MorrowRim_KwamaScrib>1.0</MorrowRim_KwamaScrib>
+		<MorrowRim_KwamaForager>1.0</MorrowRim_KwamaForager>
+		<MorrowRim_FungalShalk>0.4</MorrowRim_FungalShalk>
+		<MorrowRim_Guar>0.5</MorrowRim_Guar>
+		<MorrowRim_Netch>0.6</MorrowRim_Netch>
+		<MorrowRim_NixOx>0.05</MorrowRim_NixOx>
+		<MorrowRim_RetchingNetch>0.4</MorrowRim_RetchingNetch>
+		<MorrowRim_Vvardvark>0.1</MorrowRim_Vvardvark>
+		<MorrowRim_Scuttler>0.2</MorrowRim_Scuttler>
+		<MorrowRim_CliffRacer>0.4</MorrowRim_CliffRacer>
+		<MorrowRim_Durzog>0.5</MorrowRim_Durzog>
+		<MorrowRim_NixHound>0.4</MorrowRim_NixHound>
+		<MorrowRim_Wormmouth>0.4</MorrowRim_Wormmouth>
+		<MorrowRim_Alit>0.3</MorrowRim_Alit>
+		<MorrowRim_AshPanther>0.05</MorrowRim_AshPanther>
+		
+		<!-- Ash Swamp -->
+		<MorrowRim_Mudcrab>1</MorrowRim_Mudcrab>
+		<MorrowRim_SwampJelly>1</MorrowRim_SwampJelly>
+		<MorrowRim_Thunderbug>0.4</MorrowRim_Thunderbug>
+		<MorrowRim_Hoarvor>0.4</MorrowRim_Hoarvor>
+		<MorrowRim_Wamasu>0.15</MorrowRim_Wamasu>
+		<MorrowRim_ArgoBehemoth>0.2</MorrowRim_ArgoBehemoth>
+		
+		<!-- Special Swamp -->
+		<MorrowRim_SwampStrider>0.1</MorrowRim_SwampStrider>
+		
+		<!-- Special -->
+		<MorrowRim_AlbinoGuar>0.0001</MorrowRim_AlbinoGuar>
+		<MorrowRim_SiltStrider>0.001</MorrowRim_SiltStrider>
+		
+		<!-- Daedra -->
+		<MorrowRim_Scamp>0.04</MorrowRim_Scamp>
+		<MorrowRim_Clannfear>0.025</MorrowRim_Clannfear>
+		<MorrowRim_Daedroth>0.02</MorrowRim_Daedroth>
+		<MorrowRim_Hunger>0.02</MorrowRim_Hunger>
+		<MorrowRim_Ogrim>0.01</MorrowRim_Ogrim>
+		
+    </wildAnimals>
+    <allowedPackAnimals>
+      <li>Muffalo</li>
+      <li>Alpaca</li>
+	  <li>MorrowRim_Guar</li>
+	  <li>MorrowRim_SiltStrider</li>
+	  <li>MorrowRim_SwampStrider</li>
+	  <li>MorrowRim_NixOx</li>
+	  <li>Dromedary</li>
+    </allowedPackAnimals>
+  </BiomeDef>
+
+</Defs>

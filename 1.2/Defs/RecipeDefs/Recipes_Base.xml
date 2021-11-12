@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="MorrowRim_CraftElixirBase_Primitive" Abstract="True">
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<jobString>Creating elixir.</jobString>
+		<researchPrerequisite>MorrowRim_PrimitiveElixirs</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- -->
+
+	<RecipeDef ParentName="MorrowRim_CraftElixirBase_Primitive">
+		<defName>MorrowRim_CraftElixirSwamp_Purging</defName>
+		<label>create elixir of purging</label>
+		<description>Create 5 elixirs of purging from 5 slough spore pods and 1 muck.</description>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_SloughSporePod</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_SloughSporePod</li>
+			<li>MorrowRim_Muck</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MorrowRim_ElixirPurging>5</MorrowRim_ElixirPurging>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MorrowRim_CraftElixirBase_Primitive">
+		<defName>MorrowRim_CraftElixirSwamp_Purging_Bulk</defName>
+		<label>create elixir of purging x5</label>
+		<description>Create 25 elixirs of purging from 25 slough spore pods and 5 muck.</description>
+		<workAmount>1500</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_SloughSporePod</li>
+			  </thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_SloughSporePod</li>
+			<li>MorrowRim_Muck</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MorrowRim_ElixirPurging>25</MorrowRim_ElixirPurging>
+		</products>
+	</RecipeDef>
+	
+	<!-- -->
+	
+	<RecipeDef ParentName="MorrowRim_CraftElixirBase_Primitive">
+		<defName>MorrowRim_CraftElixirSwamp_Filtering</defName>
+		<label>create elixir of filtering</label>
+		<description>Create 5 elixirs of filtering from 5 filter spore pods and 1 muck.</description>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_FilterSporePod</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_FilterSporePod</li>
+			<li>MorrowRim_Muck</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MorrowRim_ElixirFiltering>5</MorrowRim_ElixirFiltering>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="MorrowRim_CraftElixirBase_Primitive">
+		<defName>MorrowRim_CraftElixirSwamp_Filtering_Bulk</defName>
+		<label>create elixir of filtering x5</label>
+		<description>Create 25 elixirs of filtering from 25 filter spore pods and 5 muck.</description>
+		<workAmount>1500</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_FilterSporePod</li>
+			  </thingDefs>
+			</filter>
+			<count>25</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>MorrowRim_Muck</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>MorrowRim_FilterSporePod</li>
+			<li>MorrowRim_Muck</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <MorrowRim_ElixirFiltering>25</MorrowRim_ElixirFiltering>
+		</products>
+	</RecipeDef>
+
+</Defs>

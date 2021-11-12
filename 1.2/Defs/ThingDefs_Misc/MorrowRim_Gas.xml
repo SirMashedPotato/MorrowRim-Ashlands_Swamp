@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseGas">
+    <defName>MorrowRim_GasMiasma</defName>
+	<thingClass>MorrowRim_AshSwamp.Gas_Miasma</thingClass>
+    <label>miasma cloud</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>2.2</drawSize>
+	  <color>(170,173,145,100)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>40~56</expireSeconds>
+      <blockTurretTracking>false</blockTurretTracking>
+      <accuracyPenalty>0.0</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- weeping parasol -->
+	
+	<ThingDef ParentName="TreeBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<defName>MorrowRim_WeepingParasol</defName>
+		<label>weeping parasol mushroom</label>
+		<description>A giant mushroom found often in the ashlands swamp. Takes a considerable time to grow and does not need light. The stem hardens as the mushroom ages, eventually hardening into an almost wood-like material.\n\nRequires soil with a high level of fertility to grow.\nResistant to ash storms.</description>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_WeepingParasol</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.2, 0.35, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<statBases>
+		  <Beauty>2</Beauty>
+		</statBases>
+		<plant>
+		  <fertilitySensitivity>1.0</fertilitySensitivity>
+		  <fertilityMin>1.0</fertilityMin>
+		  <growMinGlow>0.0</growMinGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <neverBlightable>true</neverBlightable>
+		  <growDays>40</growDays>
+		  <visualSizeRange>1.3~2.8</visualSizeRange>
+		  <harvestWork>1000</harvestWork>
+		  <harvestYield>60</harvestYield>
+		  <wildClusterWeight>45</wildClusterWeight>
+		  <sowMinSkill>10</sowMinSkill>
+		  <sowResearchPrerequisites>
+				<li>TreeSowing</li>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <mustBeWildToSow>true</mustBeWildToSow>
+		</plant>
+	</ThingDef>
+	
+	<!-- Draggle tails -->
+	
+	<ThingDef ParentName="PlantBase">
+	
+		<defName>MorrowRim_DraggleTails</defName>
+		<label>draggle tails</label>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>true</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A primitive flowering plant, found only in the ashlands swamp. They produce a faint glow, not powerful enough to grow nearby plants with, but enough to ensure one doesn't lose their way at night.</description>
+		<statBases>
+		  <MaxHitPoints>85</MaxHitPoints>
+		  <Beauty>5</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_DraggleTails</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.0</fertilitySensitivity>
+		  <fertilityMin>0.5</fertilityMin>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>6.8</growDays>
+		  <lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+		  <maxMeshCount>4</maxMeshCount>
+		  <visualSizeRange>0.3~1.05</visualSizeRange>
+		  <wildClusterRadius>4</wildClusterRadius>
+		  <wildClusterWeight>8</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <!--<immatureGraphicPath>MorrowRim/Plants/MorrowRim_DraggleTails_Immature</immatureGraphicPath>-->
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<!--<glowColor>(30,38,50,0)</glowColor>-->
+				<glowColor>(53,94,84,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Miasma sponge -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_MiasmaSponge</defName>
+		<label>miasma sponge mushroom</label>
+		<description>A sponge like fungus that only grows in the ashlands swamp. Like the muck sponge, of which it is closely related too, the miasma sponge slowly fills its interior with a byproduct of digestion. However, unlike the muck sponge, once capacity is reach, the byproduct is released in an aerosolized spray, creating a long lasting cloud of toxic air.\n\nWhile the miasma sponge is structurally surprisingly sturdy, it will slowly be worn down by ash storms.</description>
+		<statBases>
+		  <MaxHitPoints>195</MaxHitPoints>
+		  <Nutrition>0.3</Nutrition>
+		</statBases>
+		<altitudeLayer>Building</altitudeLayer>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_MiasmaSponge</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		  <shadowData>
+			<volume>(0.3, 0.25, 0.13)</volume>
+			<offset>(-0.03,0,-0.44)</offset>
+		  </shadowData>
+		</graphicData>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>130</pathCost>
+		<blockWind>false</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+		  <sowWork>4000</sowWork>
+		  <fertilitySensitivity>0.4</fertilitySensitivity>
+		  <fertilityMin>1.0</fertilityMin>
+		  <growMinGlow>0.4</growMinGlow>
+		  <growOptimalGlow>1</growOptimalGlow>
+		  <dieIfLeafless>false</dieIfLeafless>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <sowMinSkill>10</sowMinSkill>
+		  <blockAdjacentSow>true</blockAdjacentSow>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <topWindExposure>0.0</topWindExposure>
+		  <neverBlightable>false</neverBlightable>
+		  <growDays>8</growDays>
+		  <visualSizeRange>1.8~2.2</visualSizeRange>
+		  <wildOrder>2</wildOrder>
+		  <!--<immatureGraphicPath>MorrowRim/Plants_Immature/MorrowRim_MuckSpongeImmature</immatureGraphicPath>-->
+		  <harvestAfterGrowth>0.30</harvestAfterGrowth>
+		  <harvestMinGrowth>0.50</harvestMinGrowth>
+		  <interferesWithRoof>false</interferesWithRoof>
+		</plant>
+		<comps>
+			<li Class="MorrowRim_AshSwamp.CompProperties_PlantSpawner">
+				<thing>MorrowRim_GasMiasma</thing>
+				<amount>1</amount>
+				<radius>2</radius>
+				<growthMin>0.80</growthMin>
+				<sound>MorrowRim_Hiss</sound>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Slough Fern -->
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_SloughFern</defName>
+		<label>slough fern</label>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>true</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<description>A fern that only grows on marshy terrain in the ashlands swamp, though with enough care it can grow almost anywhere.\n\nThe spore pods of the slough fern are often used in making an elixir that aids the body in cleansing toxic buildup.</description>
+		<statBases>
+		  <MaxHitPoints>45</MaxHitPoints>
+		  <Beauty>3</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_SloughFern</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <fertilityMin>0.8</fertilityMin>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing__Fragile</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <sowWork>1000</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>1.2</growDays>
+		  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.5~1.2</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <wildClusterRadius>2</wildClusterRadius>
+		  <wildClusterWeight>4</wildClusterWeight>
+		  <immatureGraphicPath>MorrowRim/Plants/MorrowRim_SloughFern_Immature</immatureGraphicPath>
+		  <harvestedThingDef>MorrowRim_SloughSporePod</harvestedThingDef>
+		  <harvestYield>6</harvestYield>
+		</plant>
+	</ThingDef>
+
+	<!-- Filter Fern -->
+	
+	<ThingDef ParentName="PlantBase">
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>false</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+					<li>MorrowRim_SandyAsh</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<defName>MorrowRim_FilterFern</defName>
+		<label>filter fern</label>
+		<description>A primitive fern that only grows in the ashlands swamp. The fronds of the filter fern have adapted to filter most of its nutrients from particles carried in the air. Because of this adaptation it grows very slowly outside of ashstorms.\n\nThe spore pods of the filter fern are often used in making an elixir that aids the body in cleansing ash buildup.</description>
+		<statBases>
+		  <MaxHitPoints>45</MaxHitPoints>
+		  <Beauty>3</Beauty>
+		  <Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_FilterFern</texPath>
+		  <graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.2</fertilitySensitivity>
+		  <fertilityMin>0.2</fertilityMin>
+		  <sowResearchPrerequisites>
+			<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
+		  <dieIfLeafless>true</dieIfLeafless>
+		  <harvestTag>Standard</harvestTag>
+		  <sowWork>1000</sowWork>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Hydroponics</li>
+		  </sowTags>
+		  <growMinGlow>0.3</growMinGlow>
+		  <topWindExposure>0.1</topWindExposure>
+		  <growDays>25</growDays>
+		  <lifespanDaysPerGrowDays>3</lifespanDaysPerGrowDays>
+		  <visualSizeRange>0.5~1.2</visualSizeRange>
+		  <wildOrder>1</wildOrder>
+		  <wildClusterRadius>2</wildClusterRadius>
+		  <wildClusterWeight>4</wildClusterWeight>
+		  <immatureGraphicPath>MorrowRim/Plants/MorrowRim_FilterFern_Immature</immatureGraphicPath>
+		  <harvestedThingDef>MorrowRim_FilterSporePod</harvestedThingDef>
+		  <harvestYield>6</harvestYield>
+		</plant>
+		<comps>
+			<li Class="MorrowRim_AshSwamp.CompProperties_GrowthModifier">
+				<weather>
+					<li>MorrowRim_AshStorm</li>
+					<li>MorrowRim_AshStorm_Metallic</li>
+				</weather>
+				<amount>0.08</amount>
+			</li>
+		</comps>
+	</ThingDef>
+  
+</Defs>

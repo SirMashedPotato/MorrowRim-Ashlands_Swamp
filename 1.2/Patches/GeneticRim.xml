@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Patch for Recipes_Genes -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Genetic Rim</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- add genetics -->
+
+				<!-- Reptiles -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptilian"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_Wamasu</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptilian"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_Wamasu</li>
+					</value>
+				</li>
+				
+				<!-- Insects -->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_SwampStrider</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_MorrowRim_SwampStrider</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

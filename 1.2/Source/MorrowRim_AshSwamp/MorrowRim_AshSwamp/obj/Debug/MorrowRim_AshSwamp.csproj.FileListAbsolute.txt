@@ -1,0 +1,4 @@
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Assemblies\MorrowRim_AshSwamp.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csproj.CoreCompileInputs.cache

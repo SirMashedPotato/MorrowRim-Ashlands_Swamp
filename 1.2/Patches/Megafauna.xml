@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Megafauna</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<!-- add select animals to ashlands -->
+						
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Arthropleura"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.05</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Megalania"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.01</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Quinkana"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.01</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Gigantophis"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.01</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Meganeura"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.05</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Pulmonoscorpius"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.05</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="Titanoboa"]/race/wildBiomes</xpath>
+					<value>
+						<MorrowRim_AshSwamp>0.05</MorrowRim_AshSwamp>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+

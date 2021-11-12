@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Mudcrab -->
+	
+	<ThingDef ParentName="MorrowRim_BaseInsect">
+		<defName>MorrowRim_Mudcrab</defName>
+		<label>Resdayn mudcrab</label>
+		<description>A large crab often found around water, especially in swamps. While not particularly dangerous, unless someone mistakes it for a rock, mudcrab are often vectors for swamp fever, a sickness that drains strength.\n\nLike many ashland natives mudcrab are resistant to the effects of ash-storms.</description>
+		<descriptionHyperlinks>
+			<HediffDef>MorrowRim_SwampFever</HediffDef>
+		</descriptionHyperlinks>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<statBases>
+		  <MoveSpeed>2.8</MoveSpeed>
+		  <ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+		  <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+		  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+		  <MarketValue>100</MarketValue>
+		  <LeatherAmount>0</LeatherAmount>
+		  <FilthRate>10</FilthRate>
+		</statBases>
+		<uiIconScale>2</uiIconScale>
+		<tools>
+		  <li>
+			<label>pincers</label>
+			<capacities>
+			  <li>Bite</li>
+			  <li>MorrowRim_SwampBite</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.1</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_MudcrabFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>5</eggFertilizationCountMax>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~5</eggCountRange>
+			</li>
+		</comps>
+		<race>
+		  <body>MorrowRim_Crab</body>
+		  <baseBodySize>0.4</baseBodySize>
+		  <baseHungerRate>0.10</baseHungerRate>
+		  <baseHealthScale>0.8</baseHealthScale>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <bloodDef>Filth_BloodInsect</bloodDef>
+		  <wildness>0.95</wildness>
+		  <lifeExpectancy>10</lifeExpectancy>
+		  <foodType>OmnivoreRoughAnimal</foodType>
+		  <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+		  <trainability>None</trainability>
+		  <roamMtbDays>6</roamMtbDays>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.03</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.4</minAge>
+			  <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+			  <soundDeath>Pawn_Megascarab_Death</soundDeath>
+			  <soundCall>Pawn_Megascarab_Call</soundCall>
+			  <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalInsect</li>
+		</tradeTags>
+	  </ThingDef>
+	  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>MorrowRim_Mudcrab</defName>
+		<label>mudcrab</label>
+		<race>MorrowRim_Mudcrab</race>
+		<combatPower>40</combatPower>
+		<canArriveManhunter>true</canArriveManhunter>
+		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Mudcrab/Mudcrab</texPath>
+			  <drawSize>1.2</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Mudcrab/Dessicated_Mudcrab</texPath>
+			  <drawSize>1.2</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Mudcrab/Mudcrab</texPath>
+			  <drawSize>1.45</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Mudcrab/Dessicated_Mudcrab</texPath>
+			  <drawSize>1.45</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/Mudcrab/Mudcrab</texPath>
+			  <drawSize>1.7</drawSize>
+			  <shadowData>
+				<volume>(0.2, 0.3, 0.2)</volume>
+				<offset>(0,0,0)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/Mudcrab/Dessicated_Mudcrab</texPath>
+			  <drawSize>1.7</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>

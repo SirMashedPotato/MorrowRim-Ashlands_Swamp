@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>MorrowRim_SwampStrider</defName>
+		<label>swamp strider</label>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<description>A smaller relative of the silt strider, adapted for life in swamps. The shell of the swamp strider is often covered in a thick layer of moss, helping the large beast blend in amongst the dense foliage of the swamp. Much like the silt strider, they can be used as capable beasts of burden, though they can not carry as much.\n\nLike many ashland natives swamp striders are resistant to the effects of ash-storms.</description>
+		<statBases>
+		  <MoveSpeed>2.9</MoveSpeed>
+		  <MarketValue>800</MarketValue>
+		  <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>50</ComfyTemperatureMax>
+		  <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.20</ArmorRating_Heat>
+		</statBases>
+		<uiIconScale>1.75</uiIconScale>
+		<tools>
+		<li>
+			<label>left scythed arm</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>MorrowRim_InsectArmAttackTool_L</linkedBodyPartsGroup>
+			<chanceFactor>0.7</chanceFactor>
+		  </li>
+		<li>
+			<label>right scythed arm</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>MorrowRim_InsectArmAttackTool_R</linkedBodyPartsGroup>
+			<chanceFactor>0.7</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>15</power>
+			<cooldownTime>4</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggFertilizedDef>MorrowRim_Egg_SwampStriderFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>30</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>MorrowRim_SwampMoss</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>100</woolAmount>
+			</li>
+		</comps>
+		<race>
+		  <body>MorrowRim_Flea</body>
+		  <herdMigrationAllowed>true</herdMigrationAllowed>
+		  <packAnimal>true</packAnimal>
+		  <baseBodySize>4</baseBodySize>
+		  <baseHungerRate>1.5</baseHungerRate>
+		  <baseHealthScale>4.0</baseHealthScale>
+		  <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+		  <fleshType>Insectoid</fleshType>
+		  <bloodDef>Filth_BloodInsect</bloodDef>
+		  <useMeatFrom>Megaspider</useMeatFrom>
+		  <leatherDef>MorrowRim_SiltStriderChitin</leatherDef>
+		  <trainability>Simple</trainability>
+		  <manhunterOnDamageChance>0.8</manhunterOnDamageChance>
+		  <wildness>0.80</wildness>
+		  <lifeExpectancy>200</lifeExpectancy>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>2</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>5</minAge>
+			  <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+			  <soundDeath>Pawn_BigInsect_Death</soundDeath>
+			  <soundCall>Pawn_Elephant_Call</soundCall>
+			  <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+		  <li>AnimalExotic</li>
+		  <li>AshlandAnimalExotic</li>
+		</tradeTags>
+	  </ThingDef>
+
+	<PawnKindDef Name="MorrowRim_SwampStrider" ParentName="AnimalKindBase">
+		<defName>MorrowRim_SwampStrider</defName>
+		<label>swamp-strider</label>
+		<race>MorrowRim_SwampStrider</race>
+		<combatPower>200</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<label>swamp-strider nymph</label>
+			<labelPlural>swamp-strider nymph</labelPlural>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/SwampStrider/SwampStrider</texPath>
+			  <drawSize>3.5</drawSize>
+			  <shadowData>
+				<volume>(0.4, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/SwampStrider/Dessicated_SwampStrider</texPath>
+			  <drawSize>3.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/SwampStrider/SwampStrider</texPath>
+			  <drawSize>4.0</drawSize>
+			  <shadowData>
+				<volume>(0.7, 0.6, 0.4)</volume>
+				<offset>(0,0,-0.25)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/SwampStrider/Dessicated_SwampStrider</texPath>
+			  <drawSize>4.0</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>MorrowRim/Animals/SwampStrider/SwampStrider</texPath>
+			  <drawSize>4.8</drawSize>
+			  <shadowData>
+				<volume>(1, 0.8, 0.5)</volume>
+				<offset>(0,0,-0.5)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>MorrowRim/Animals/SwampStrider/Dessicated_SwampStrider</texPath>
+			  <drawSize>4.8</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
