@@ -7,6 +7,7 @@
 		<modExtensions>
 			<li Class="MorrowRim.ExtendedRaceProperties">
                 <ashResistant>Resistant</ashResistant>
+				<StrangeButcher>true</StrangeButcher>
             </li>
 		</modExtensions>
 		<description>A land dwelling cnidarian, often found in the ashlands swamp. Much smaller than their cousin, the netch. The swamp jelly also lacks a protective shell, though their tentacles are still covered in microscopic toxic barbs. They can be harvested for jelly, though cannot be milked for it.\n\nDue to its simple body structure, the swamp jelly is resistant to the effects of ash-storms.</description>
@@ -100,7 +101,7 @@
 		  <foodType>VegetarianRoughAnimal</foodType>
 		  <!--<leatherDef>MorrowRim_NetchLeather</leatherDef>-->
 		  <trainability>None</trainability>
-		  <gestationPeriodDays>10</gestationPeriodDays>
+		  <gestationPeriodDays>3</gestationPeriodDays>
 		  <useMeatFrom>Muffalo</useMeatFrom>
 		  <roamMtbDays>5</roamMtbDays>
 		  <litterSizeCurve>
@@ -150,15 +151,15 @@
 		<race>MorrowRim_SwampJelly</race>
 		<combatPower>40</combatPower>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
-		<wildGroupSize>3~5</wildGroupSize>
+		<wildGroupSize>1~5</wildGroupSize>
 		<!-- alt graphic code -->
 		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
-			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_A</texPath></li>
-			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_B</texPath></li>
-			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_C</texPath></li>
-			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_D</texPath></li>
-			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_E</texPath></li>
+			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_A</texPath><weight>0.7</weight></li>
+			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_B</texPath><weight>0.5</weight></li>
+			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_C</texPath><weight>0.3</weight></li>
+			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_D</texPath><weight>0.1</weight></li>
+			<li><texPath>MorrowRim/Animals/SwampJelly/SwampJelly_E</texPath><weight>0.05</weight></li>
 		</alternateGraphics>
 		<!-- -->
 		<lifeStages>
