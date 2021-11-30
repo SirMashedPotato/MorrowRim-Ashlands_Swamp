@@ -63,6 +63,7 @@
 		<statBases>
 		  <MaxHitPoints>85</MaxHitPoints>
 		  <Beauty>5</Beauty>
+		  <BeautyOutdoors>5</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -178,6 +179,7 @@
 		<statBases>
 		  <MaxHitPoints>45</MaxHitPoints>
 		  <Beauty>3</Beauty>
+		  <BeautyOutdoors>3</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -208,6 +210,7 @@
 		  <immatureGraphicPath>MorrowRim/Plants/MorrowRim_SloughFern_Immature</immatureGraphicPath>
 		  <harvestedThingDef>MorrowRim_SloughSporePod</harvestedThingDef>
 		  <harvestYield>6</harvestYield>
+		  <purpose>Health</purpose>
 		</plant>
 	</ThingDef>
 
@@ -234,6 +237,7 @@
 		<statBases>
 		  <MaxHitPoints>45</MaxHitPoints>
 		  <Beauty>3</Beauty>
+		  <BeautyOutdoors>3</BeautyOutdoors>
 		  <Nutrition>0.05</Nutrition>
 		</statBases>
 		<graphicData>
@@ -266,6 +270,7 @@
 		  <immatureGraphicPath>MorrowRim/Plants/MorrowRim_FilterFern_Immature</immatureGraphicPath>
 		  <harvestedThingDef>MorrowRim_FilterSporePod</harvestedThingDef>
 		  <harvestYield>6</harvestYield>
+		  <purpose>Health</purpose>
 		</plant>
 		<comps>
 			<li Class="MorrowRim_AshSwamp.CompProperties_GrowthModifier">
