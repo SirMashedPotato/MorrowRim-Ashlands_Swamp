@@ -105,6 +105,12 @@
 		<combatPower>40</combatPower>
 		<canArriveManhunter>true</canArriveManhunter>
 		<ecoSystemWeight>0.15</ecoSystemWeight>
+		<alternateGraphicChance>0.1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>MorrowRim/Animals/Mudcrab/Mudcrab_Merchant</texPath>
+			</li>
+		</alternateGraphics>
 		<lifeStages>
 		  <li>
 			<bodyGraphicData>
