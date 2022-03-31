@@ -63,7 +63,7 @@
 	
 	<ThingDef ParentName="PlantBase">
 		<defName>MorrowRim_SomnaliusFern</defName>
-		<label>somnalius fern</label>
+		<label>ashland somnalius fern</label>
 		<modExtensions>
 			<li Class="MorrowRim.PlantProperties">
 				<forceOntoTerrain>true</forceOntoTerrain>
@@ -74,7 +74,7 @@
 				</terrainList>
 			</li>
 		</modExtensions>
-		<description>A small fragile fern, often found growing in swampy regions.</description>
+		<description>A small fragile fern, typically found growing in the ashlands swamp.</description>
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
 		  <Beauty>5</Beauty>
@@ -103,18 +103,10 @@
 	
 	<ThingDef ParentName="PlantBase">
 		<defName>MorrowRim_SomnaliusFernSown</defName>
-		<label>somnalius fern</label>
+		<label>ashland somnalius fern</label>
 		<modExtensions>
-			<li Class="MorrowRim.PlantProperties">
-				<forceOntoTerrain>true</forceOntoTerrain>
-				<whitelist>false</whitelist>
-				<terrainList>
-					<li>Marsh</li>
-					<li>MarshyTerrain</li>
-				</terrainList>
-			</li>
 		</modExtensions>
-		<description>A small fragile fern, often found growing in swampy regions.</description>
+		<description>A small fragile fern, typically found growing in the ashlands swamp.</description>
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
 		  <Beauty>5</Beauty>
@@ -166,11 +158,11 @@
 				</terrainList>
 			</li>
 		</modExtensions>
-		<description>A rare fern that can sometimes be found growing in swampy regions. Certain ashlander tribes use the fronds of this fern to mask their scent whilst hunting.</description>
+		<description>A rare fern that can sometimes be found growing in swampy regions. Certain ashlander tribes use the flowers of this fern to mask their scent whilst hunting.</description>
 		<statBases>
 		  <MaxHitPoints>30</MaxHitPoints>
-		  <Beauty>3</Beauty>
-		  <BeautyOutdoors>3</BeautyOutdoors>
+		  <Beauty>8</Beauty>
+		  <BeautyOutdoors>8</BeautyOutdoors>
 		  <Nutrition>0.2</Nutrition>
 		</statBases>
 		<pathCost>3</pathCost>
@@ -181,15 +173,59 @@
 		<ingestible />
 		<plant>
 		  <fertilitySensitivity>0.7</fertilitySensitivity>
-		  <growDays>3</growDays>
+		  <growDays>4</growDays>
 		  <harvestWork>60</harvestWork>
 		  <maxMeshCount>1</maxMeshCount>
 		  <visualSizeRange>0.95~1.15</visualSizeRange>
 		  <topWindExposure>0.2</topWindExposure>
 		  <wildClusterRadius>3</wildClusterRadius>
 		  <wildClusterWeight>40</wildClusterWeight>
-			  <wildOrder>1</wildOrder>
-			  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		  <wildOrder>1</wildOrder>
+		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>MorrowRim_AshenFernSown</defName>
+		<label>ashen fern</label>
+		<modExtensions>
+			<li Class="MorrowRim.ExtendedRaceProperties">
+                <ashResistant>Resistant</ashResistant>
+            </li>
+		</modExtensions>
+		<description>A rare fern that can sometimes be found growing in swampy regions. Certain ashlander tribes use the flowers of this fern to mask their scent whilst hunting.</description>
+		<statBases>
+		  <MaxHitPoints>30</MaxHitPoints>
+		  <Beauty>8</Beauty>
+		  <BeautyOutdoors>8</BeautyOutdoors>
+		  <Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>3</pathCost>
+		<graphicData>
+		  <texPath>MorrowRim/Plants/MorrowRim_AshenFern</texPath>
+		</graphicData>
+		<altitudeLayer>Item</altitudeLayer>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+		  <fertilitySensitivity>0.7</fertilitySensitivity>
+		  <growDays>4</growDays>
+		  <harvestWork>60</harvestWork>
+		  <maxMeshCount>1</maxMeshCount>
+		  <visualSizeRange>0.95~1.15</visualSizeRange>
+		  <topWindExposure>0.2</topWindExposure>
+		  <wildClusterRadius>3</wildClusterRadius>
+		  <wildClusterWeight>40</wildClusterWeight>
+		  <wildOrder>1</wildOrder>
+		  <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		  <sowTags>
+			<li>Ground</li>
+			<li>Decorative</li>
+		  </sowTags>
+		  <purpose>Beauty</purpose>
+		  <sowResearchPrerequisites>
+				<li>MorrowRim_AshSowing</li>
+		  </sowResearchPrerequisites>
 		</plant>
 	</ThingDef>
 	
