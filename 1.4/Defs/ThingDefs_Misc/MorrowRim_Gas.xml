@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MorrowRim_Gas_Base">
+    <defName>MorrowRim_GasMiasma</defName>
+	<thingClass>MorrowRim_AshSwamp.Gas_Miasma</thingClass>
+    <label>miasma cloud</label>
+    <graphicData>
+	  <color>(170,173,145,100)</color>
+    </graphicData>
+  </ThingDef>
+
+</Defs>

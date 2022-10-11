@@ -1,0 +1,12 @@
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Assemblies\MorrowRim_AshSwamp.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\1.3\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\1.3\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\1.3\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.dll
+C:\Users\andre\Desktop\Rimworld\MorrowRim\MorrowRim - Ash Swamp\1.3\Assemblies\MorrowRim_AshSwamp.dll
+J:\Modding\Github\MorrowRim-Ashlands_Swamp\1.4\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csproj.AssemblyReference.cache
+J:\Modding\Github\MorrowRim-Ashlands_Swamp\1.4\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.csproj.CoreCompileInputs.cache
+J:\Modding\Github\MorrowRim-Ashlands_Swamp\1.4\Source\MorrowRim_AshSwamp\MorrowRim_AshSwamp\obj\Debug\MorrowRim_AshSwamp.dll
+J:\Modding\Github\MorrowRim-Ashlands_Swamp\1.4\Assemblies\MorrowRim_AshSwamp.dll

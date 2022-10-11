@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Mudcrab -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_MudcrabFertilized</defName>
+		<label>mudcrab egg (fert.)</label>
+		<description>A fertilized mudcrab egg. If all goes well, it should hatch into a baby mudcrab. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>11</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>4</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Mudcrab</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- Wamasu -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_WamasuFertilized</defName>
+		<label>wamasu egg (fert.)</label>
+		<description>A fertilized wamasu egg. If all goes well, it should hatch into a wamasu whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(114,184,138)</color>
+		  <drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>30.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>25</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Wamasu</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Swamp strider -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_SwampStriderFertilized</defName>
+		<label>swamp strider egg (fert.)</label>
+		<description>A fertilized swamp strider egg. If all goes well, it should hatch into a swamp strider nymph. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		  <color>(138,124,124)</color>
+		  <drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>30.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>20</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_SwampStrider</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<!-- Hoarvor -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_HoarvorFertilized</defName>
+		<label>hoarvor egg (fert.)</label>
+		<description>A fertilized hoarvor egg. If all goes well, it should hatch into a baby hoarvor. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		  <color>(109,111,109)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>7</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>4</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Hoarvor</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- Thunderbug -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_ThunderbugFertilized</defName>
+		<label>thunderbug egg (fert.)</label>
+		<description>A fertilized thunderbug egg. If all goes well, it should hatch into a baby thunderbug. Rather disgusting when eaten raw, but is tolerable cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+		  <color>(100,100,111)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>11</MarketValue>
+		  <Nutrition>0.15</Nutrition>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>4</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_Thunderbug</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandRare</li>
+		</tradeTags>
+		<ingestible>
+		  <specialThoughtDirect>MorrowRim_ateInsectEggDirect</specialThoughtDirect>
+		  <specialThoughtAsIngredient>MorrowRim_ateInsectEggAsIngredient</specialThoughtAsIngredient>
+		</ingestible>
+	</ThingDef>
+	
+	<!-- HajMota -->
+	<!--
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_HajMotaFertilized</defName>
+		<label>haj mota egg (fert.)</label>
+		<description>A fertilized haj mota egg. If all goes well, it should hatch into a haj mota whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(134,114,118)</color>
+		  <drawSize>1.35</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>30.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>25</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_HajMota</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+	-->
+	
+	<!-- ArgoBehemoth -->
+	<ThingDef ParentName="EggFertBase">
+		<defName>MorrowRim_Egg_ArgoBehemothFertilized</defName>
+		<label>behemoth egg (fert.)</label>
+		<description>A fertilized behemoth egg. If all goes well, it should hatch into a behemoth whelp. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(138,138,138)</color>
+		  <drawSize>1.0</drawSize>
+		</graphicData>
+		<statBases>
+		  <MarketValue>25.0</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>16</hatcherDaystoHatch>
+			<hatcherPawn>MorrowRim_ArgoBehemoth</hatcherPawn>
+		  </li>
+		</comps>
+		<tradeTags>
+			<li>AshlandExotic</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

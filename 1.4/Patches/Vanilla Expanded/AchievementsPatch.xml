@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="XSD_FILE_PATH">
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+						
+						<!-- Incidents -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementBondWamasu</defName>
+							<label>An Electrifying Connection</label>
+							<description>Have a colonist bond with a wamasu</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlandSwamp</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.AnimalBondedTracker">
+								<kindDef>MorrowRim_Wamasu</kindDef>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementBondWamasu</texPath>
+							<points>30</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!-- Kills -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayMudCrab</defName>
+							<label>Horrible Things</label>
+							<description>Slay 50 mudcrab</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlandSwamp</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_Mudcrab</kindDef>
+								<count>50</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayMudCrab</texPath>
+							<points>25</points>
+						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlaySwampJelly</defName>
+							<label>It's Your Own Fault For Being So Tasty</label>
+							<description>Hunt 100 swamp jelly</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlandSwamp</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_SwampJelly</kindDef>
+								<count>100</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlaySwampJelly</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+	
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementSlayWamasu</defName>
+							<label>Children of Haynekhtnamet</label>
+							<description>Hunt 20 wamasu</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlandSwamp</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KillTracker">
+								<kindDef>MorrowRim_Wamasu</kindDef>
+								<count>20</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementSlayWamasu</texPath>
+							<points>50</points>
+						</AchievementsExpanded.AchievementDef>
+		
+						<!-- Livestock -->
+
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementTameSwampStrider</defName>
+							<label>Why Wade When You Can Ride?</label>
+							<description>Have a tame swamp strider</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackgroundAshlandSwamp</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>MorrowRim_SwampStrider</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementTameSwampStrider</texPath>
+							<points>30</points>
+						</AchievementsExpanded.AchievementDef>
+	
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

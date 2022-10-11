@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ToolCapacityDef>
+		<defName>MorrowRim_SwampBite</defName>
+		<label>mudcrab bite</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>MorrowRim_HoarvorBite</defName>
+		<label>hoarvor bite</label>
+	</ToolCapacityDef>
+
+</Defs>

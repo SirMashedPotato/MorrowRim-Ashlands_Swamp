@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<FleshTypeDef>
+		<defName>MorrowRim_FleshJelly</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<genericWounds>
+		  <li>
+			<texture>Things/Pawn/Wounds/WoundA</texture>
+			<color>0.3,0.5,0.7</color>
+		  </li>
+		  <li>
+			<texture>Things/Pawn/Wounds/WoundB</texture>
+			<color>0.3,0.5,0.7</color>
+		  </li>
+		  <li>
+			<texture>Things/Pawn/Wounds/WoundC</texture>
+			<color>0.3,0.5,0.7</color>
+		  </li>
+		</genericWounds>
+	</FleshTypeDef>
+	
+	<FleshTypeDef>
+		<defName>MorrowRim_FleshWamasu</defName>
+		<corpseCategory>CorpsesAnimal</corpseCategory>
+		<genericWounds>
+		  <li>
+			<texture>Things/Pawn/Wounds/WoundA</texture>
+			<color>0.5,0.6,0.8</color>
+		  </li>
+		  <li>
+			<texture>Things/Pawn/Wounds/WoundB</texture>
+			<color>0.5,0.6,0.8</color>
+		  </li>
+		  <li>
+			<texture>Things/Pawn/Wounds/WoundC</texture>
+			<color>0.5,0.6,0.8</color>
+		  </li>
+		</genericWounds>
+	</FleshTypeDef>
+
+</Defs>

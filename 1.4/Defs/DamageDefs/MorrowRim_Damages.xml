@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef ParentName="Bite">
+		<defName>MorrowRim_HoarvorBite</defName>
+		<label>hoarvor bite</label>
+		<additionalHediffs>
+		  <li>
+			<hediff>BloodLoss</hediff>
+			<severityPerDamageDealt>0.005</severityPerDamageDealt>
+			<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+		  </li>
+		</additionalHediffs>
+  </DamageDef>
+
+</Defs>

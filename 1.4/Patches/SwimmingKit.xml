@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SwimmingKit</li>
+		</mods> 
+				
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Mudcrab"]/statBases</xpath>
+					<value>
+						<SwimSpeed>3.2</SwimSpeed>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_SwampStrider"]/statBases</xpath>
+					<value>
+						<SwimSpeed>2.5</SwimSpeed>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="MorrowRim_Wamasu"]/statBases</xpath>
+					<value>
+						<SwimSpeed>4.5</SwimSpeed>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>
+
