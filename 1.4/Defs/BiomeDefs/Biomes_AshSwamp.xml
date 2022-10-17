@@ -173,6 +173,9 @@
 		<MorrowRim_FilterFern>0.2</MorrowRim_FilterFern>
 		<MorrowRim_MiasmaSponge>0.1</MorrowRim_MiasmaSponge>
 		<MorrowRim_FulgurSpore>0.05</MorrowRim_FulgurSpore>
+		
+		<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+		<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
 	  
     </wildPlants>
     <wildAnimals>
