@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>MorrowRim_GlowingDraggleTails</defName>
+		<label>glowing draggle tails</label>
+		<description>A subspecies of the common graggle tails, adapted for life in hgihly polluted regions. They produce an ominous glow, not powerful enough to grow nearby plants with, but enough to ensure one doesn't lose their way at night.</description>
+		<modExtensions>
+			<li Class="MorrowRim.PlantProperties">
+				<forceOntoTerrain>true</forceOntoTerrain>
+				<whitelist>true</whitelist>
+				<terrainList>
+					<li>Marsh</li>
+					<li>MarshyTerrain</li>
+				</terrainList>
+			</li>
+		</modExtensions>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>MorrowRim/Plants/MorrowRim_GlowingDraggleTails</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>false</selectable>
+		<ingestible/>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<growMinGlow>0.3</growMinGlow>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.8</growDays>
+			<lifespanDaysPerGrowDays>2</lifespanDaysPerGrowDays>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>0.6~1.6</visualSizeRange>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(53,104,84,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

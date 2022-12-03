@@ -70,7 +70,7 @@
 		  <texPath>MorrowRim/Plants/MorrowRim_DraggleTails</texPath>
 		  <graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<selectable>true</selectable>
+		<selectable>false</selectable>
 		<ingestible />
 		<plant>
 		  <fertilitySensitivity>0.0</fertilitySensitivity>
