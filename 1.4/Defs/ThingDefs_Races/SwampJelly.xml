@@ -17,7 +17,7 @@
 		  <MarketValue>60</MarketValue>
 		  <ComfyTemperatureMin>5</ComfyTemperatureMin>
 		  <ComfyTemperatureMax>40</ComfyTemperatureMax>
-		  <MeatAmount>0</MeatAmount>
+		  <MeatAmount>120</MeatAmount>
 		  <LeatherAmount>0</LeatherAmount>
 		  <FilthRate>0</FilthRate>
 		</statBases>
@@ -93,6 +93,7 @@
 		<race>
 		  <fleshType>MorrowRim_FleshJelly</fleshType>
 		  <bloodDef>MorrowRim_Filth_JellyBlood</bloodDef>
+		  <specificMeatDef>MorrowRim_SwampJellyEdible</specificMeatDef>
 		  <herdAnimal>true</herdAnimal>
 		  <body>MorrowRim_JellyNoShell</body>
 		  <baseBodySize>0.4</baseBodySize>
@@ -102,7 +103,6 @@
 		  <!--<leatherDef>MorrowRim_NetchLeather</leatherDef>-->
 		  <trainability>None</trainability>
 		  <gestationPeriodDays>3</gestationPeriodDays>
-		  <useMeatFrom>Muffalo</useMeatFrom>
 		  <roamMtbDays>5</roamMtbDays>
 		  <litterSizeCurve>
 			<points>
@@ -136,9 +136,6 @@
 		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<butcherProducts>
-		  <MorrowRim_SwampJellyEdible>3</MorrowRim_SwampJellyEdible>
-		</butcherProducts>
 		<tradeTags>
 		  <li>AnimalCommon</li>
 		  <li>AshlandAnimalRare</li>
