@@ -225,11 +225,11 @@
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
 			<Rat>1</Rat>
-			<MorrowRim_GlowingShalk>0.2</MorrowRim_GlowingShalk>
+			<MorrowRim_GlowingShalk MayRequire="Ludeon.RimWorld.Biotech">0.2</MorrowRim_GlowingShalk>
 			<MorrowRim_CliffRacer>0.6</MorrowRim_CliffRacer>
 			<MorrowRim_Durzog>0.8</MorrowRim_Durzog>
 			<MorrowRim_Wormmouth>0.2</MorrowRim_Wormmouth>
-			<MorrowRim_GlowingNetch>0.4</MorrowRim_GlowingNetch>
+			<MorrowRim_GlowingNetch MayRequire="Ludeon.RimWorld.Biotech">0.4</MorrowRim_GlowingNetch>
 			<MorrowRim_Mudcrab>0.3</MorrowRim_Mudcrab>
 		</pollutionWildAnimals>
 		<allowedPackAnimals>
